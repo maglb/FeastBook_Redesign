@@ -1,0 +1,30 @@
+.recipe-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.single-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.single-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.single-card-body {
+    padding: 16px;
+}
+
+.single-card-title {
+    margin-bottom: 15px;
+}
+
+.single-card-text {
+    color: #333;
+    margin-bottom: 15px;
+}

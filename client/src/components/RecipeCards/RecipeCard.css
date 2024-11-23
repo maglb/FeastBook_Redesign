@@ -1,0 +1,97 @@
+
+/* card form */
+
+.recipes{
+    color:rgb(0, 0, 0);
+    padding: 8px;
+    font-size: 40px;
+    font-family: "Playfair Display";
+    font-weight: 600;
+    text-decoration: underline double;
+    text-align: center;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-radius: 8px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('https://img.freepik.com/free-photo/top-view-sketchbook-cottage-cheese-with-fresh-ripe-yellow-red-cherries-arranged-around-grey_141793-12013.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color:rgb(33 32 136 / 40%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.form {
+    border-radius: 8px;
+    align-content: center;
+    display:grid;
+    justify-content: center;
+  }
+
+.label{
+    color:rgb(255, 255, 255);
+    padding: 8px;
+    font-size: 25px;
+    font-family: "Playfair Display";
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+.input {
+    margin-bottom: 10px;
+    width: (70%); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgb(249, 225, 207);
+  }
+
+  .button{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: "Poppins";
+    font-weight: 250;
+  }
+
+  .button:hover {
+    background-color: #011073;
+  }
+
+
+/* diplayed card */
+
+.recipe-card{
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.word{
+    text-align: center;
+    align-items: center;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    text-decoration: underline double;
+    padding: 8px;
+}
+
+.time{
+    text-align: center;
+    align-items: center;
+    font-family: "Playfair Display";
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+.list{
+    list-style-type: none;
+    text-align: justify;
+    font-family: "Playfair Display";
+}
+
