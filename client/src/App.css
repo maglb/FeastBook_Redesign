@@ -1,25 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #FFFAF0;
+}
+
+
 .login-text {
-  text-align: center;
+text-align: center;
   width: 80%;
   margin: 0 auto;
 }
 
 .login-heading {
-  /* border: solid 2px #1a1a1a; */
-  font-family: "Playfair Display";
+  font-family: "Roboto";
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 20px;
 }
 
 .login-page {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  background-color: #aad15f;
-  height: 800px;
+  height: auto;
   border-radius: 20px;
-  position: relative;
   top: 40px;
-  /* border: solid 2px #1a1a1a; */
   font-family: "Playfair Display";
+  column-gap: 60px;
+  width: 90%;
 }
 
 .login-form {
@@ -28,8 +42,11 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  /* border: solid 2px #ac0202; */
   width: 100%;
+}
+
+label, input {
+  font-family: "Roboto" !important;
 }
 
 .login-form-input {
@@ -42,17 +59,53 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px
+  margin-right: 20px;
+  width: 50%;
+}
+
+.login-section-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
 }
 
 .login-picture {
   max-width: 100%;
   height: auto;
-  justify-content: center;
-  height: 500px;
-  width: 800px;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+
+h1 {
+  font-size: 150px !important;
+  font-weight: 300;
+  text-align: center;
+  font-family: 'Playfair Display', serif !important;
+  color: #1A8980;
+}
+
+.subhead {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans serif !important;
+  color: #093D38;
+}
+
+.btn {
+  background-color: #1A8980 !important;
+  font-family: 'Poppins', sans serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-top: 10px !important;
+}
+
+.form-input {
+  border: 1.5px solid #093D38 !important;
 }
 
 @media (max-width: 1311px) {
@@ -71,8 +124,6 @@
   .login-page {
     height: 600px;
     width: auto;
-    /* position: relative;
-    top: 150px */
   }
   .top-section {
     width: 600px !important;
@@ -108,18 +159,18 @@
   .login-page {
     height: 650px;
   }
-  .logo-section {
+  /* .logo-section {
     position: relative;
     bottom: 400px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     width: auto !important;
     margin: 0 auto;
-  }
+  } */
 }
 
 @media (max-width: 540px) {
-  .logo-section {
+  /* .logo-section {
     width: auto;
     font-size: 40px !important;
   }
@@ -137,31 +188,31 @@
   border-bottom-left-radius: 20px;
   color: white;
   /* border: solid 2px blue; */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* margin-right: 20px; */
+/* } */ 
 }
 
 .top-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  width: 800px;
   border-top-right-radius: 20px;
-  /* margin-right: 20px; */
 }
 
 
 .signup-section {
   text-align: center;
-  /* margin-top: 20px; */
+  margin-top: 20px;
+}
+
+.signup-section a, .signup-section p {
+  text-decoration: none;
+ font-family: "Roboto";
 }
 
 .signup-section a {
   color: #007bff;
-  /* Bootstrap primary blue, adjust as per your theme */
-  text-decoration: none;
-  /* Optional */
 }
 
 .button {
@@ -1369,10 +1420,9 @@ label form [type="radio"] {
 }
 
 .container {
-  width: 85%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto !important;
+  display:flex;
+  justify-content: center;
 }
 
 .container.container-fluid {
