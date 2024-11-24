@@ -3,7 +3,7 @@ import { Form, Button, Alert } from 'react-bootstrap';
 import { useMutation } from '@apollo/client';
 import AuthService from '../utils/auth';
 import { CREATE_ACCOUNT } from '../utils/mutations';
-import loginPicture from '../assets/Pictures/login-picture.png';
+import loginPicture from '../assets/Pictures/HomePage.webp';
 import { useNavigate } from 'react-router-dom';
 
 const CreateAccountForm = () => {
